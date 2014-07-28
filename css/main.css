@@ -6,74 +6,85 @@ a {
 	text-decoration: none;
 }
 
+body {
+	background-color: #FFF;
+}
+
 hr {
-	max-width: 960px;
+	max-width: 400px;
 	margin-top: 4px;
 	margin-bottom: 4px;
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 h2 {
-	font-family: 'Kreon', serif;
-	font-size: 18px;
-
-
+	font-family: 'Montserrat', serif;
+	font-size: 16px;
+	font-weight: 400;
 }
 
 h3 {
-	font-family: 'Kreon', serif;
+	font-family: 'Montserrat', serif;
 	font-size: 16px;
+	font-weight: 400;
 }
 
 p {
 	font-size: 13px;
 }
 
-
-/************************
-HEADER
-************************/
-
-
-
+#wrapper {
+	max-width: 1073px;
+	margin: 0 auto;
+}
 
 /************************
 NAVIGATION
 ************************/
 
 nav {
-	max-width: 960px;
+	max-width: 1073px;
 	padding: 0;
-	margin: 20px auto;
+	margin: 0;
+	background-image: url(../img/navigationbar.jpg);
+	height: 55px;
+}
+
+nav ul {
+	margin: 0 15%;
+	padding: 0;
 }
 
 nav li {
 	display: inline-block;
-	margin: 0 3.8%;
-	padding: 0;
-	font-family: 'Oswald', serif;
-	font-weight: 700;
-	font-size: 18px;
-	max-width: 14.28%;
+	margin: 0 4.15%;
+	padding: 17.5px 0;
+	font-family: 'Montserrat', serif;
+	font-weight: 400;
+	font-size: 16px;
+
 }
 
 nav a {
-	color: #000;
+	color: #FFF;
 }
 
 nav a:hover {
-	color: #ADD6C2;
+	color: #000;
 }
 
 
 
 /************************
-BODY
+NEWS
 ************************/
-
 #news {
 	float: left;
-	max-width: 43%;
-	margin: 12px 2% 20px 14.7%;
+	max-width: 55%;
+	margin-top: 30px 0 0 0;
 }
 
 #news ul {
@@ -89,12 +100,13 @@ INSTAGRAM
 
 #instagram {
 	float: right;
-	margin: 30px 14.28% 20px 1%;
+	max-width: 45%;
+	margin: 18px 0 0 0;
 }
 
 #instagram h2 {
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
 	padding-right: 4px;
 }
 
@@ -113,6 +125,69 @@ TOUR
 	font-size: 13px;
 }
 
+/************************
+PAGE: TOUR DATES
+************************/
+
+#tour-dates {
+	margin-top: 65px;
+}
+
+
+/************************
+PAGE: ABOUT
+************************/
+
+#about-photo {
+	max-width: 35%;
+	padding-left: 12.5%;
+	margin-top: 80px;
+	margin-bottom: 200px;
+	float: left;
+}
+
+#about-text {
+	max-width: 35%;
+	padding-right: 13%;
+	margin-top: 65px;
+	float: right;
+}
+
+
+/************************
+PAGE: MEDIA
+************************/
+
+#media {
+	max-width: 50%;
+	float: left;
+	margin: 65px 0 200px 0;
+}
+
+#media h2 {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+
+
+/************************
+PAGE: CONTACT
+************************/
+
+#contact-info {
+	text-align: center;
+	margin-top: 65px;
+	margin-bottom: 200px;
+}
+
+#contact-info p {
+	padding-top: 20px;
+}
+
+#contact-info a {
+	color: #C25455;
+}
 
 
 /************************
@@ -125,28 +200,28 @@ SOCIAL BAR
 	bottom: 0;
 	width: 100%;
 	height: 60px;
-	background-color: #585858;
+	background-color: #000;
 	opacity: 0.9;
 }
 
 #iconbar {
-	margin: 0 31%;
+	margin: 0 27%;
+	padding: 0;
 }
 
 .icon {
 	display: inline-block;
-	margin: 15px 10px 0px 10px;
-	float: right;
+	margin: 20px 15px 0 15px;
 }
 
-#fourth {
-	margin-right: 145px;
+.icon a:visited {
+	color: #FFF;
 }
 
 .icon img {
-	max-height: 30px;
-	max-width: 30px;
+	max-height: 23px;
 	opacity: 1;
+	vertical-align: middle;
 }
 
 
@@ -165,5 +240,5 @@ footer {
 }
 
 footer hr {
-	max-width: 960px;
+	max-width: 1073px;
 }
