@@ -1,7 +1,13 @@
-var page_content;
-$.get( "http://api.tumblr.com/v2/blog/theworkdayrelease.tumblr.com/posts", {"api_key":"QLsxt7OS0goMSjkvah9Xys4dHacGDArTyPZ3merghVWrp03YtH"}, function(data){
-    page_content = data;
-    console.log(page_content);
+$.ajax({
+	type:"GET",
+	dataType:"json",
+	headers: {
+		"Access-Control-Allow-Origin":"*"
+	},
+	url:"http://api.tumblr.com/v2/blog/theworkdayrelease.tumblr.com/posts?api_key=QLsxt7OS0goMSjkvah9Xys4dHacGDArTyPZ3merghVWrp03YtH",
+	success:function(data){
+		console.log(data);
+	}
 });
 
 
