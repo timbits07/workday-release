@@ -1,24 +1,8 @@
-// Authenticate via API Key
-var tumblr = require('tumblr.js');
-var client = tumblr.createClient({ consumer_key: 'QLsxt7OS0goMSjkvah9Xys4dHacGDArTyPZ3merghVWrp03YtH' });
-
-// Make the request
-client.posts('theworkdayrelease.tumblr.com', { limit: 3, filter: 'html' }, function (err, data) {
-    console.log(client.posts);
+var page_content;
+$.get( "http://api.tumblr.com/v2/blog/theworkdayrelease.tumblr.com/posts", {"api_key":"QLsxt7OS0goMSjkvah9Xys4dHacGDArTyPZ3merghVWrp03YtH"}, function(data){
+    page_content = data;
+    console.log(page_content);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // $(document).ready(function(){
