@@ -50,6 +50,7 @@ HEADER
 #logo {
 	max-width: 1073px;
 	margin-top: 20px;
+	pointer-events: none;
 }
 
 /************************
@@ -211,32 +212,67 @@ SOCIAL BAR
 	bottom: 0;
 	width: 100%;
 	height: 60px;
-	background-color: #000;
-	opacity: 0.9;
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
-#iconbar {
-	margin: 0 28%;
-	padding: 0;
+#socialbar {
+	max-width: 60%;
+	margin-left: 20%;
 }
 
 .icon {
 	display: inline-block;
-	margin: 20px 13px 0 13px;
+	height: 23px;
+	width: 120px;
+	margin: 20px 4.5% 0;
 }
 
-.icon:last-child {
-	margin-right: 0;
+#facebookIcon {
+	background-image: url(../img/facebookbutton2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.icon a:visited {
-	color: #FFF;
+#facebookIcon:hover {
+	background-image: url(../img/facebookbuttonhover2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.icon img {
-	max-height: 23px;
-	opacity: 1;
-	vertical-align: middle;
+#twitterIcon {
+	background-image: url(../img/twitterbutton2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#twitterIcon:hover {
+	background-image: url(../img/twitterbuttonhover2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#instagramIcon {
+	background-image: url(../img/instagrambutton2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#instagramIcon:hover {
+	background-image: url(../img/instagrambuttonhover2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#youtubeIcon {
+	background-image: url(../img/youtubebutton2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#youtubeIcon:hover {
+	background-image: url(../img/youtubebuttonhover2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 

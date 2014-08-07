@@ -1,14 +1,15 @@
-$.ajax({
-	type:"GET",
-	dataType:"json",
-	headers: {
-		"Access-Control-Allow-Origin":"*"
-	},
-	url:"http://api.tumblr.com/v2/blog/theworkdayrelease.tumblr.com/posts?api_key=QLsxt7OS0goMSjkvah9Xys4dHacGDArTyPZ3merghVWrp03YtH",
-	success:function(data){
-		console.log(data);
-	}
-});
+
+// $.ajax({
+// 	type:"GET",
+// 	dataType:"json",
+// 	headers: {
+// 		"Access-Control-Allow-Origin":"*"
+// 	},
+// 	url:"http://api.tumblr.com/v2/blog/theworkdayrelease.tumblr.com/posts?api_key=QLsxt7OS0goMSjkvah9Xys4dHacGDArTyPZ3merghVWrp03YtH",
+// 	success:function(data){
+// 		console.log(data);
+// 	}
+// });
 
 
 // $(document).ready(function(){
